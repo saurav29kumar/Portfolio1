@@ -11,37 +11,51 @@ function Portfolio(){
         {
           logo: refocus,
           name: "Refokus‐UI‐Clone",
-          para: 'Designed and implemented with HTML, CSS, JavaScript, Tailwind CSS and React JS.'
+          para: 'Designed and implemented with HTML, CSS, JavaScript, Tailwind CSS and React JS.',
+          vlink: "https://basic-calculator-uhpm.vercel.app/",
+          slink: "https://github.com/saurav29kumar/refokusuiclone2"
         },
         {
           logo: calculator,
           name: "Calculator",
-          para:'Designed and implemented with HTML, CSS and JavaScript.'
+          para:'Designed and implemented with HTML, CSS and JavaScript.',
+          vlink: "https://basic-calculator-five-lac.vercel.app/",
+          slink: "https://github.com/saurav29kumar/Basic-Calculator"
         },
         {
           logo: magmaUI,
           name: "Clone Of magma.com",
-          para:"Designed and implemented with HTML, CSS, canvas and JavaScript."
+          para:"Designed and implemented with HTML, CSS, canvas and JavaScript.",
+          vlink: "https://magma-ui-clone.vercel.app/",
+          slink: "https://github.com/saurav29kumar/magmaUIclone"
         },
         {
           logo: sundown,
           name: "Clone Of Sundown Studio",
-          para:"Designed and implemented with HTML, CSS and JavaScript."
+          para:"Designed and implemented with HTML, CSS and JavaScript.",
+          vlink: "https://sundown-u-istudios.vercel.app/",
+          slink: "https://github.com/saurav29kumar/SundownUIstudio"
         },
         {
           logo: duostudio,
           name: "duo-studio-ui-clone",
-          para:"Designed and implemented with HTML, CSS and JavaScript."
+          para:"Designed and implemented with HTML, CSS and JavaScript.",
+          vlink: "https://duo-studio-clone-tau.vercel.app/",
+          slink: "https://github.com/saurav29kumar/duoStudioClone"
         },
         {
           logo: golf,
           name: "Golf community ui clone",
-          para:"Designed and implemented with HTML, CSS and JavaScript."
+          para:"Designed and implemented with HTML, CSS and JavaScript.",
+          vlink: "https://golfcommunity.vercel.app/",
+          slink: "https://github.com/saurav29kumar/golfcommunity"
         },
         {
           logo: portfolio,
           name: "My Portfolio website",
-          para:"Designed and implemented with HTML, CSS ,JavaScript, Tailwind CSS and React JS."
+          para:"Designed and implemented with HTML, CSS ,JavaScript, Tailwind CSS and React JS.",
+          vlink: "https://portfolio1-gb3p.vercel.app/",
+          slink: "https://github.com/saurav29kumar/Portfolio1"
         },
       ];
     return(
@@ -70,12 +84,16 @@ function Portfolio(){
                 </p>
               </div>
               <div className=" px-6 py-4 space-x-3 justify-around">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                  Video
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
-                  Source code
-                </button>
+                <a href={item.vlink} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
+                    Video
+                  </button>
+                </a>
+                <a href={item.slink} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
+                    Source code
+                  </button>
+                </a>
               </div>
             </div>
           ))}
